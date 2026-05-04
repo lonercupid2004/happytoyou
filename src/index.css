@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-arabic: "Amiri", serif;
+  --font-script: "Dancing Script", cursive;
+
+  --color-brand-gold: #C5A059;
+  --color-brand-brown: #5D544B;
+  --color-brand-dark: #4A443E;
+  --color-brand-cream: #FAF7F2;
+  --color-brand-border: #E8E2D9;
+  --color-brand-pink-soft: #FDF2F8;
+  --color-brand-purple-soft: #F5F3FF;
+  --color-brand-amber-soft: #FFFBEB;
+}
+
+:root {
+  --brand-gold: #C5A059;
+  --brand-cream: #FAF7F2;
+  --brand-brown: #5D544B;
+}
+
+body {
+  background-color: #FAF7F2; /* Hardcoded fallback */
+  color: #5D544B; /* Hardcoded fallback */
+  margin: 0;
+  padding: 0;
+}
+
+.islamic-pattern {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(circle at 2px 2px, #5D544B 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid #E8E2D9;
+}
+
+.theme-shadow {
+  box-shadow: 0 20px 50px -12px rgba(93, 84, 75, 0.1);
+}
